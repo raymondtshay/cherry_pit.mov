@@ -3077,6 +3077,17 @@ html {
     padding-left: 21px;
   }
   
+  .div-block-3 .description {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  .div-block-3 p.description {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
   .div-block-8, .div-block-9, .div-block-11 {
     font-family: Vogue, sans-serif;
   }
@@ -3204,6 +3215,11 @@ html {
     font-weight: 400;
     position: static;
     inset: 0% 0% auto;
+  }
+  
+  body > div > .text-block-4:first-child,
+  body > div > div > .text-block-4:first-child {
+    font-size: 28px;
   }
   
   .heading-4 {
