@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,13 +7,12 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     
     <style>
-        /* GLOBAL STYLES (Matching your other pages) */
         body {
             background-color: white;
             margin: 0;
             padding: 0;
             /* 2. UPDATE YOUR FONT NAME BELOW */
-            font-family: 'Your Font Name', sans-serif !important; 
+            font-family: sans-serif; 
             color: black;
             text-align: center;
         }
@@ -24,7 +23,6 @@
             text-transform: lowercase;
         }
 
-        /* REEL TITLE SECTION */
         .cine-reel-text {
             font-size: 24px;
             font-weight: 400;
@@ -33,10 +31,9 @@
             text-transform: lowercase;
         }
 
-        /* VIDEO CONTAINER */
         .video-container {
             max-width: 1200px;
-            margin: 0 auto 100px auto; /* Margin bottom for nav space */
+            margin: 0 auto 100px auto;
             padding: 0 20px;
         }
 
@@ -50,4 +47,58 @@
             top: 0;
             left: 0;
             width: 100%;
-            height:
+            height: 100%;
+        }
+
+        .quick-stack-2 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0;
+            border-top: 1px solid #eee;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: white;
+            z-index: 100;
+        }
+
+        .quick-stack-2 a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .w--current {
+            text-decoration: underline !important;
+        }
+
+        @media (max-width: 768px) {
+            .cine-reel-text { font-size: 20px; }
+            .quick-stack-2 { gap: 15px; padding: 20px 0; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-block-4">cherry pit reels</div>
+    <div class="cine-reel-text">ray shay 2024 reel</div>
+
+    <div class="video-container">
+        <div class="video-wrapper">
+            <iframe src="https://player.vimeo.com/video/1045486957?h=f444c16dd1&title=0&byline=0&portrait=0" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="quick-stack-2">
+        <a href="reels.html" class="w--current">reels</a>
+        <a href="index.html">selects</a>
+        <a href="credits.html">credits</a>
+        <a href="contact.html">contact</a>
+    </div>
+</body>
+</html>
