@@ -3080,12 +3080,15 @@ html {
   .div-block-3 .description {
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1;
   }
   
   .div-block-3 p.description {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
+    line-height: 1;
   }
   
   .div-block-8, .div-block-9, .div-block-11 {
