@@ -1,104 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>reels | cherry pit</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-color: white;
             margin: 0;
             padding: 0;
-            /* 2. UPDATE YOUR FONT NAME BELOW */
-            font-family: sans-serif; 
+            font-family: 'Roboto Condensed', sans-serif !important; 
             color: black;
+            text-transform: lowercase;
+        }
+
+        .header-nav {
+            padding: 20px;
             text-align: center;
-        }
-
-        .text-block-4 {
-            padding: 20px 20px 5px 20px;
             font-size: 18px;
-            text-transform: lowercase;
         }
 
-        .cine-reel-text {
-            font-size: 24px;
-            font-weight: 400;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            text-transform: lowercase;
-        }
-
+        /* VIDEO CONTAINER STYLING */
         .video-container {
-            max-width: 1200px;
-            margin: 0 auto 100px auto;
+            max-width: 1000px; /* Limits width on laptops so it stays clean */
+            margin: 40px auto;
             padding: 0 20px;
         }
 
         .video-wrapper {
-            padding: 56.25% 0 0 0;
             position: relative;
-        }
-
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            /* This maintains the 16:9 cinematic aspect ratio */
+            aspect-ratio: 16 / 9; 
         }
 
-        .quick-stack-2 {
+        /* FOOTER NAVIGATION */
+        .footer-nav {
             display: flex;
             justify-content: center;
             gap: 30px;
-            padding: 40px 0;
+            padding: 60px 0 40px 0;
             border-top: 1px solid #eee;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: white;
-            z-index: 100;
+            margin-top: 40px;
         }
 
-        .quick-stack-2 a {
+        .footer-nav a {
             text-decoration: none;
             color: black;
-            font-size: 16px;
+            font-size: 18px;
         }
 
-        .w--current {
+        .active {
             text-decoration: underline !important;
         }
 
         @media (max-width: 768px) {
-            .cine-reel-text { font-size: 20px; }
-            .quick-stack-2 { gap: 15px; padding: 20px 0; }
+            .footer-nav { gap: 15px; }
+            .footer-nav a { font-size: 15px; }
         }
     </style>
 </head>
-
 <body>
-    <div class="text-block-4">cherry pit reels</div>
-    <div class="cine-reel-text">ray shay 2024 reel</div>
+
+    <div class="header-nav">
+        <div>cherry pit</div>
+    </div>
 
     <div class="video-container">
         <div class="video-wrapper">
-            <iframe src="https://player.vimeo.com/video/1045486957?h=f444c16dd1&title=0&byline=0&portrait=0" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    allowfullscreen>
+            <iframe 
+                src="https://player.cloudinary.com/embed/?cloud_name=dgruyldmv&public_id=2025_REEL_FINAL_100mb_r3vqbd" 
+                width="100%" 
+                height="100%" 
+                style="position: absolute; top: 0; left: 0; border: none;" 
+                allow="autoplay; fullscreen; encrypted-media; picture-in-picture" 
+                allowfullscreen>
             </iframe>
         </div>
     </div>
 
-    <div class="quick-stack-2">
-        <a href="reels.html" class="w--current">reels</a>
+    <div class="footer-nav">
+        <a href="reels.html" class="active">reels</a>
         <a href="index.html">selects</a>
         <a href="credits.html">credits</a>
         <a href="contact.html">contact</a>
     </div>
+
 </body>
 </html>
