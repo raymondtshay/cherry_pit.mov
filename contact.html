@@ -1,46 +1,111 @@
-<!DOCTYPE html><!-- Last Published: Wed Nov 05 2025 17:47:27 GMT+0000 (Coordinated Universal Time) -->
-<html data-wf-domain="www.cherrypitstudios.com" data-wf-page="64df4b916c5afade39ff9035" data-wf-site="62e1e4e5927e6b732be02ff9">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>CONTACT</title>
-    <meta content="CONTACT" property="og:title" />
-    <meta content="CONTACT" property="twitter:title" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-    <link href="https://cdn.prod.website-files.com/62e1e4e5927e6b732be02ff9/674e15154afae23b67a517e9_Ray%20Logo%20256.png" rel="apple-touch-icon" />
+    <meta charset="utf-8">
+    <title>CONTACT | cherry pit</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* GLOBAL STYLES (Matching Index/Credits format) */
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            /* 2. UPDATED FONT NAME: Now matches the link above */
+            font-family: 'Inter', sans-serif !important; 
+            color: black;
+            text-align: center;
+        }
+
+        .text-block-4 {
+            padding: 20px 20px 5px 20px;
+            font-size: 18px;
+            text-transform: lowercase;
+        }
+
+        /* MAIN TITLE SECTION */
+        .main.iphone-title-name {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            text-transform: lowercase;
+        }
+
+        /* CONTACT LINKS */
+        .contact-container {
+            margin-bottom: 80px;
+        }
+
+        .contact-link {
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            margin: 15px 0;
+            text-transform: lowercase;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        /* NAVIGATION BAR (Unified across all pages) */
+        .quick-stack-2 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0;
+            border-top: 1px solid #eee;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: white;
+        }
+
+        .quick-stack-2 a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            text-transform: lowercase;
+        }
+
+        .w--current {
+            text-decoration: underline !important;
+        }
+
+        /* MOBILE FIXES */
+        @media (max-width: 768px) {
+            .main.iphone-title-name { font-size: 20px; margin-top: 40px; }
+            .contact-link { font-size: 16px; }
+            .quick-stack-2 { gap: 15px; padding: 20px 0; }
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <div class="text-block-4">cherry pit</div>
-        <div class="text-block-4">contact</div>
-        <h1 class="main iphone-title-name">ray shay<br />producer + director + dp + colorist<br /></h1>
-    </div>
-    <div class="contact"><a href="sms:+18584426749?" class="link-block-2 w-inline-block">
-            <div class="contact">858-442-6749</div>
-        </a>
-        <div><a href="mailto:rayshay@cherrypitstudios.com" class="link-block w-inline-block">
-                <div class="contact">rayshay@cherrypitstudios.com</div>
-            </a></div>
-    </div>
-    <div id="w-node-_2206dd22-da32-0be7-eb4b-48faf42800b7-f42800b7" class="w-layout-layout quick-stack-2 wf-layout-layout">
-        <div class="w-layout-cell cell"><a href="reels.html" class="w-inline-block">
-                <div class="above">reels</div>
-            </a></div>
-        <div class="w-layout-cell cell-5"><a href="index.html" class="w-inline-block">
-                <div class="above">selects</div>
-            </a></div>
-        <div class="w-layout-cell cell-8"><a href="credits.html" class="w-inline-block">
-                <div class="above">credits</div>
-            </a></div>
-        <div class="w-layout-cell cell-2"><a href="contact.html" aria-current="page" class="w-inline-block w--current">
-                <div class="above">contact</div>
-            </a></div>
-    </div>
-</body>
+    <div class="text-block-4">cherry pit</div>
+    <div class="text-block-4">contact</div>
 
+    <h1 class="main iphone-title-name">ray shay<br>producer + director + dp + colorist</h1>
+
+    <div class="contact-container">
+        <a href="sms:+18584426749" class="contact-link">858-442-6749</a>
+        <a href="mailto:rayshay@cherrypitstudios.com" class="contact-link">rayshay@cherrypitstudios.com</a>
+    </div>
+
+    <div class="quick-stack-2">
+        <a href="reels.html">reels</a>
+        <a href="index.html">selects</a>
+        <a href="credits.html">credits</a>
+        <a href="contact.html" class="w--current">contact</a>
+    </div>
+
+</body>
 </html>
