@@ -3455,8 +3455,8 @@ html {
     }
   
     .main.description {
-      margin-top: -7px;
-      margin-bottom: -34px;
+      margin-top: 8px;
+      margin-bottom: 8px;
       font-size: 17px;
     }
   
@@ -3775,7 +3775,8 @@ html {
     }
   
     .main.description {
-      margin-top: -20px;
+      margin-top: 8px;
+      margin-bottom: 6px;
       margin-left: auto;
       margin-right: auto;
       padding-bottom: 0;
@@ -3861,8 +3862,12 @@ html {
     }
   
     .description {
-      margin-top: -32px;
+      margin-top: 4px;
       font-size: 8px;
+    }
+
+    .div-block-11 .div-block-12 {
+      margin-bottom: 10px;
     }
   
     .description.sub {
