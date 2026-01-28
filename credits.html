@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>credits | cherry pit</title>
-    <title>ray shay credits</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,40 +25,43 @@
             font-size: 18px;
         }
 
-        /* COMPACT LIST SPACING */
+        /* LEFT ALIGNED WITH CUSHION */
         .credits-section {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 20px 20px;
-            gap: 2px; /* Tightens the gap between lines */
+            align-items: flex-start; /* Aligns everything to the left */
+            padding: 20px 30px;      /* 30px provides the 'couple spaces' cushion */
+            max-width: 1200px;
+            margin: 0 auto;          /* Keeps the container centered on big screens */
+        }
+
+        .ray-name-credits {
+            font-size: 18px;
+            margin-bottom: 2px;
+            font-weight: 400;
         }
 
         .category-title {
-            font-size: 24px; /* Matches original size */
-            text-transform: lowercase;
-            margin-top: 30px;
-            margin-bottom: 10px;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-bottom: 15px;
             font-weight: 400;
             border-bottom: 1px solid black;
-            width: fit-content;
         }
 
         .credit-line {
-            font-size: 14px; /* Matches original size */
+            font-size: 14px;
             font-weight: 400;
-            text-align: center;
-            line-height: 1.2; /* Tightens the text vertical space */
-            margin: 2px 0; /* Minimal margin between projects */
-            max-width: 900px;
+            line-height: 1.4;
+            margin: 3px 0;
+            text-align: left;
         }
 
-        /* FOOTER NAVIGATION */
         .footer-nav {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            padding: 50px 0;
+            gap: 30px;
+            padding: 60px 0 40px 0;
             border-top: 1px solid #eee;
             margin-top: 40px;
         }
@@ -67,7 +69,7 @@
         .footer-nav a {
             text-decoration: none;
             color: black;
-            font-size: 16px;
+            font-size: 18px;
         }
 
         .active {
@@ -75,9 +77,10 @@
         }
 
         @media (max-width: 768px) {
+            .credits-section { padding: 10px 20px; }
             .category-title { font-size: 20px; }
-            .credit-line { font-size: 12px; padding: 0 10px; }
-            .footer-nav { gap: 20px; }
+            .credit-line { font-size: 12px; }
+            .footer-nav { gap: 15px; }
         }
     </style>
 </head>
@@ -86,8 +89,8 @@
     <div class="header-nav">
         <div>cherry pit</div>
     </div>
-
     <div class="credits-section">
+        <div>ray shay credits</div>
         <h2 class="category-title">music video</h2>
         <p class="credit-line">ava morse "fake id" - executive producer/D.O.P/colorist - dojop house co. - 2025</p>
         <p class="credit-line">wendy wang "gum" - executive producer/director- cherry pit studios - 2025</p>
@@ -131,7 +134,3 @@
         <a href="index.html">selects</a>
         <a href="credits.html" class="active">credits</a>
         <a href="contact.html">contact</a>
-    </div>
-
-</body>
-</html>
