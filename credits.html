@@ -1,6 +1,5 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>credits | cherry pit</title>
@@ -8,132 +7,128 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
-        /* GLOBAL STYLES */
         body {
             background-color: white;
             margin: 0;
             padding: 0;
-            /* 2. UPDATED FONT NAME: It matches the link above now */
-            font-family: 'Inter', sans-serif !important; 
+            font-family: 'Roboto Condensed', sans-serif !important; 
             color: black;
-        }
-
-        .text-block-4 {
-            padding: 20px;
-            font-size: 18px;
-            text-align: center;
             text-transform: lowercase;
         }
 
-        /* LAYOUT FOR THE CREDITS LIST */
-        .quick-stack-4, .quick-stack-3 {
+        .header-nav {
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* COMPACT LIST SPACING */
+        .credits-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 20px;
-            gap: 10px;
+            padding: 20px 20px;
+            gap: 2px; /* Tightens the gap between lines */
         }
 
-        .heading-4 {
-            font-size: 32px;
+        .category-title {
+            font-size: 24px; /* Matches original size */
             text-transform: lowercase;
-            margin-bottom: 20px;
-            border-bottom: 1px solid black;
+            margin-top: 30px;
+            margin-bottom: 10px;
             font-weight: 400;
+            border-bottom: 1px solid black;
+            width: fit-content;
         }
 
-        .works {
-            font-size: 14px;
+        .credit-line {
+            font-size: 14px; /* Matches original size */
             font-weight: 400;
             text-align: center;
-            line-height: 1.6;
-            margin: 5px 0;
-            max-width: 800px;
-            text-transform: lowercase;
+            line-height: 1.2; /* Tightens the text vertical space */
+            margin: 2px 0; /* Minimal margin between projects */
+            max-width: 900px;
         }
 
-        /* NAVIGATION BAR */
-        .quick-stack-2 {
+        /* FOOTER NAVIGATION */
+        .footer-nav {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            padding: 40px 0;
+            gap: 40px;
+            padding: 50px 0;
             border-top: 1px solid #eee;
+            margin-top: 40px;
         }
 
-        .quick-stack-2 a {
+        .footer-nav a {
             text-decoration: none;
             color: black;
             font-size: 16px;
         }
 
-        .quick-stack-2 a:hover {
-            text-decoration: underline;
-        }
-
-        .w--current {
+        .active {
             text-decoration: underline !important;
         }
 
-        /* MOBILE FIXES */
         @media (max-width: 768px) {
-            .heading-4 { font-size: 24px; }
-            .works { font-size: 12px; padding: 0 10px; }
-            .quick-stack-2 { gap: 15px; }
+            .category-title { font-size: 20px; }
+            .credit-line { font-size: 12px; padding: 0 10px; }
+            .footer-nav { gap: 20px; }
         }
     </style>
 </head>
-
 <body>
-    <div class="text-block-4">cherry pit</div>
-    <div class="text-block-4">contact</div>
 
-    <div class="quick-stack-4">
-        <h1 class="heading-4">music video</h1>
-        <h1 class="works">ava morse "fake id" - producer/D.O.P/colorist - dojo house co. - 2025</h1>
-        <h1 class="works">wendy wang "gum" - producer/director- cherry pit studios - 2025</h1>
-        <h1 class="works">kyrie "visualizer" - director of photography/editor/colorist - 2025</h1>
-        <h1 class="works">kyrie "cool girl" - director of photography/editor/colorist - 2025</h1>
-        <h1 class="works">ava morse "king of california" - producer/director- cherry pit studios - 2025</h1>
-        <h1 class="works">carlo megilo "motherlode" - producer/director- cherry pit studios - 2025</h1>
-        <h1 class="works">ava morse "domino$" - producer/D.O.P/colorist - dojop house co. - 2025</h1>
-        <h1 class="works">beene "green honda" - producer/director- cherry pit studios - 2025</h1>
-        <h1 class="works">summer "hey sister" - producer/director - 2025</h1>
-        <h1 class="works">wendy wang "mantis" - producer/director - 2024</h1>
-        <h1 class="works">linsey urreae "strictly business" - executive producer/director of photography/editor/colorist - 2024</h1>
-        <h1 class="works">sam free "fell in love at 15" - executive producer/director of photography - 2024</h1>
-        <h1 class="works">wendy wang "clover" - executive producer/director - 2024</h1>
-        <h1 class="works">tiana "where do we all go" - producer/director of photography/editor/colorist - 2024</h1>
-        <h1 class="works">any gabrielly "bonito baby" - casting director/2nd AD - 2024</h1>
-        <h1 class="works">stephen dawes "up all night" - director of photography - 2024</h1>
-        <h1 class="works">any gabrielly "sweat" - production coordinator - 2024</h1>
+    <div class="header-nav">
+        <div>cherry pit</div>
     </div>
 
-    <div class="quick-stack-3">
-        <h1 class="heading-4">narrative</h1>
-        <h1 class="works">love bite - narrative short - director of photography/colorist - 2025 - nominated for ASC heritage award</h1>
-        <h1 class="works">eric priest - documentary - director of photography/colorist - 2025</h1>
-        <h1 class="works">real - narrative short - director of photography/colorist - 2025</h1>
-        <h1 class="works">a soul and a dime - narrative short - colorist - 2025</h1>
-        <h1 class="works">in the weeds - narrative short - director of photography/colorist - 2025</h1>
-        <h1 class="works">i know your not real - narrative short - director of photography/colorist - 2025 - Won</h1>
-        <h1 class="works">los angles - narrative short - colorist - 2025</h1>
-        <h1 class="works">numbers & nonsense - narrative short - director of photography/colorist - 2025</h1>
-        <h1 class="works">honey - narrative short - colorist - 2025</h1>
-        <h1 class="works">dance floor 86 - narrative short - colorist - 2025</h1>
-        <h1 class="works">hoops and heritage - documentary - colorist - 2025</h1>
-        <h1 class="works">white face - narrative short - colorist - 2025</h1>
-        <h1 class="works">spotlighting - narrative short - director of photography/colorist - 2024</h1>
-        <h1 class="works">red ruby - narrative short - director of photography/colorist - 2024</h1>
+    <div class="credits-section">
+        <h2 class="category-title">music video</h2>
+        <p class="credit-line">ava morse "fake id" - executive producer/D.O.P/colorist - dojop house co. - 2025</p>
+        <p class="credit-line">wendy wang "gum" - executive producer/director- cherry pit studios - 2025</p>
+        <p class="credit-line">kyrie "visualizer" - director of photography/editor/colorist - 2025</p>
+        <p class="credit-line">kyrie "cool girl" - director of photography/editor/colorist - 2025</p>
+        <p class="credit-line">ava morse "king of california" - executive producer/director- cherry pit studios - 2025</p>
+        <p class="credit-line">carlo megilo "motherlode" - executive producer/director- cherry pit studios - 2025</p>
+        <p class="credit-line">ava morse "domino$" - producer/D.O.P/colorist - dojop house co. - 2025</p>
+        <p class="credit-line">beene "green honda" - executive producer/director- cherry pit studios - 2025</p>
+        <p class="credit-line">summer "hey sister" - executive producer/director - 2025</p>
+        <p class="credit-line">wendy wang "mantis" - executive producer/director - 2024</p>
+        <p class="credit-line">linsey urreae "strictly business" - executive producer/director of photography/editor/colorist - 2024</p>
+        <p class="credit-line">sam free "fell in love at 15" - executive producer/director of photography - 2024</p>
+        <p class="credit-line">wendy wang "clover" - executive producer/director - 2024</p>
+        <p class="credit-line">tiana "where do we all go" - producer/director of photography/editor/colorist - 2024</p>
+        <p class="credit-line">any gabrielly "bonito baby" - casting director/2nd AD - 2024</p>
+        <p class="credit-line">stephen dawes "up all night" - director of photography - 2024</p>
+        <p class="credit-line">any gabrielly "sweat" - production coordinator - 2024</p>
     </div>
 
-    <div class="quick-stack-2">
+    <div class="credits-section">
+        <h2 class="category-title">narrative</h2>
+        <p class="credit-line">love bite - narrative short - director of photography/colorist - 2025 - nominated for ASC heritage award</p>
+        <p class="credit-line">eric priest - documentary - director of photography/colorist - 2025</p>
+        <p class="credit-line">real - narrative short - director of photography/colorist - 2025</p>
+        <p class="credit-line">a soul and a dime - narrative short - colorist - 2025</p>
+        <p class="credit-line">in the weeds - narrative short - director of photography/colorist - 2025</p>
+        <p class="credit-line">i know your not real - narrative short - director of photography/colorist - 2025 - won</p>
+        <p class="credit-line">los angles - narrative short - colorist - 2025</p>
+        <p class="credit-line">numbers & nonsense - narrative short - director of photography/colorist - 2025</p>
+        <p class="credit-line">honey - narrative short - colorist - 2025</p>
+        <p class="credit-line">dance floor 86 - narrative short - colorist - 2025</p>
+        <p class="credit-line">hoops and heritage - documentary - colorist - 2025</p>
+        <p class="credit-line">white face - narrative short - colorist - 2025</p>
+        <p class="credit-line">spotlighting - narrative short - director of photography/colorist - 2024</p>
+        <h1 class="credit-line">red ruby - narrative short - director of photography/colorist - 2024</h1>
+    </div>
+
+    <div class="footer-nav">
         <a href="reels.html">reels</a>
         <a href="index.html">selects</a>
-        <a href="credits.html" class="w--current">credits</a>
+        <a href="credits.html" class="active">credits</a>
         <a href="contact.html">contact</a>
     </div>
 
