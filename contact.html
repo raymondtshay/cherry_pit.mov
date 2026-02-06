@@ -1,6 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>selects | cherry pit</title>
+    <title>contact | cherry pit</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,21 +19,78 @@
             text-transform: lowercase;
         }
 
-        /* Reduced spacing fixes from earlier */
-        .div-block-11 {
-            margin-top: 20px !important;
-            margin-bottom: 20px !important;
-            height: auto !important;
+        .header-nav {
+            padding: 20px 20px 0px 20px;
+            font-size: 18px;
+            text-align: center;
         }
 
-        .main.description {
-            margin-top: 10px !important;
-            margin-bottom: 5px !important;
-            line-height: 1.2 !important;
+        .quick-stack-2 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0 20px 0;
+            background: white;
+            border-bottom: 1px solid #eee; 
+        }
+
+        .quick-stack-2 a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .active { text-decoration: underline !important; }
+
+        /* CONTACT CONTENT */
+        .contact-container {
+            max-width: 1200px;
+            margin: 100px auto; /* Centers the info vertically/horizontally */
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .contact-info {
+            font-size: 26px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: black;
+            text-decoration: none;
+            border-bottom: 1px solid black;
         }
 
         @media (max-width: 768px) {
-            .div-block-11 { height: auto !important; display: block !important; margin-bottom: 40px !important; }
+            .quick-stack-2 { gap: 15px; }
+            .contact-info { font-size: 20px; }
         }
     </style>
 </head>
+<body>
+
+    <div class="header-nav">
+        <div>cherry pit</div>
+        <div>contact</div>
+    </div>
+
+    <div class="quick-stack-2">
+        <a href="reels.html">reels</a>
+        <a href="index.html">selects</a>
+        <a href="credits.html">credits</a>
+        <a href="contact.html" class="active">contact</a>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">ray shay</div>
+        <div class="contact-info">
+            <a href="mailto:your-email@example.com">your-email@example.com</a>
+        </div>
+        <div class="contact-info">
+            <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a>
+        </div>
+    </div>
+
+</body>
+</html>
