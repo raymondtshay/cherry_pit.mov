@@ -28,9 +28,9 @@
         /* POSITIONING FOR NAME AND TITLE */
         .name-title-wrap {
             text-align: left;
-            padding-left: 20px; /* This is your cushion from the left side */
-            margin-bottom: 3px;  /* This creates exactly 3px space above the video */
-            margin-top: 20px;    /* Space between cherry pit and your name */
+            padding-left: 20px;
+            margin-bottom: 3px;  
+            margin-top: 20px;    
         }
 
         .ray-name {
@@ -47,20 +47,25 @@
         /* VIDEO CONTAINER */
         .video-container {
             max-width: 1200px; 
-            margin: 0 auto; /* Centered, but top margin is 0 to respect the 3px above */
+            margin: 0 auto; 
             padding: 0 20px;
         }
 
+        /* VIMEO RESPONSIVE WRAPPER */
         .video-wrapper {
-            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
             background: black;
-            line-height: 0;
         }
 
-        video {
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            display: block;
+            height: 100%;
         }
 
         /* FOOTER NAVIGATION */
@@ -86,7 +91,7 @@
         @media (max-width: 768px) {
             .footer-nav { gap: 15px; }
             .footer-nav a { font-size: 15px; }
-            .name-title-wrap { padding-left: 15px; } /* Slightly tighter for mobile */
+            .name-title-wrap { padding-left: 15px; } 
         }
     </style>
 </head>
@@ -103,10 +108,12 @@
 
     <div class="video-container">
         <div class="video-wrapper">
-            <video controls playsinline preload="metadata">
-                <source src="https://vimeo.com/1162632453?share=copy&fl=sv&fe=ci" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <iframe 
+                src="https://player.vimeo.com/video/1162632453?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                title="director reel">
+            </iframe>
         </div>
     </div>
 
