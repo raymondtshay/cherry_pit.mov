@@ -1,0 +1,106 @@
+/* 1. GLOBAL RESET & FONT SETTINGS */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #fff;
+  color: #000;
+  /* Force Roboto Condensed everywhere */
+  font-family: 'Roboto Condensed', sans-serif !important;
+  text-transform: lowercase;
+  line-height: 1.5;
+}
+
+/* 2. LAYOUT BOXES (The Grid System) */
+* {
+  box-sizing: border-box;
+}
+
+.w-layout-grid {
+  display: grid;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0px;
+}
+
+/* 3. PROJECT STYLING (Selects Page) */
+.div-block-11 {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  height: auto !important;
+}
+
+.main.description {
+  font-size: 28px;
+  margin-top: 10px !important;
+  margin-bottom: 5px !important;
+  text-align: center;
+  font-weight: 400;
+}
+
+.div-block-3 .description {
+  font-size: 14px;
+  text-align: center;
+  margin: 2px 0;
+}
+
+/* 4. NAVIGATION BAR (The bottom links) */
+.quick-stack-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  position: static; /* Change to 'fixed' if you want it to stick to bottom */
+}
+
+.quick-stack-2 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.w--current {
+  text-decoration: underline !important;
+}
+
+/* 5. IMAGE SETTINGS */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* 6. MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  .div-block-11 {
+      display: block !important;
+      height: auto !important;
+      margin-bottom: 40px !important;
+  }
+  
+  .grid-6 {
+      grid-template-columns: 1fr 1fr; /* Stack images 2x2 on mobile */
+  }
+
+  .main.description {
+      font-size: 22px !important;
+  }
+
+  .quick-stack-2 {
+      gap: 15px;
+  }
+}

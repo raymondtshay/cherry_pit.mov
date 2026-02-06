@@ -1,111 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>CONTACT | cherry pit</title>
+    <title>selects | cherry pit</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
-        /* GLOBAL STYLES (Matching Index/Credits format) */
         body {
             background-color: white;
             margin: 0;
             padding: 0;
-            /* 2. UPDATED FONT NAME: Now matches the link above */
-            font-family: 'Inter', sans-serif !important; 
+            font-family: 'Roboto Condensed', sans-serif !important; 
             color: black;
-            text-align: center;
-        }
-
-        .text-block-4 {
-            padding: 20px 20px 5px 20px;
-            font-size: 18px;
             text-transform: lowercase;
         }
 
-        /* MAIN TITLE SECTION */
-        .main.iphone-title-name {
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 1.4;
-            margin-top: 60px;
-            margin-bottom: 40px;
-            text-transform: lowercase;
+        /* Reduced spacing fixes from earlier */
+        .div-block-11 {
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;
+            height: auto !important;
         }
 
-        /* CONTACT LINKS */
-        .contact-container {
-            margin-bottom: 80px;
+        .main.description {
+            margin-top: 10px !important;
+            margin-bottom: 5px !important;
+            line-height: 1.2 !important;
         }
 
-        .contact-link {
-            display: block;
-            text-decoration: none;
-            color: black;
-            font-size: 18px;
-            margin: 15px 0;
-            text-transform: lowercase;
-        }
-
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-
-        /* NAVIGATION BAR (Unified across all pages) */
-        .quick-stack-2 {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 40px 0;
-            border-top: 1px solid #eee;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: white;
-        }
-
-        .quick-stack-2 a {
-            text-decoration: none;
-            color: black;
-            font-size: 16px;
-            text-transform: lowercase;
-        }
-
-        .w--current {
-            text-decoration: underline !important;
-        }
-
-        /* MOBILE FIXES */
         @media (max-width: 768px) {
-            .main.iphone-title-name { font-size: 20px; margin-top: 40px; }
-            .contact-link { font-size: 16px; }
-            .quick-stack-2 { gap: 15px; padding: 20px 0; }
+            .div-block-11 { height: auto !important; display: block !important; margin-bottom: 40px !important; }
         }
     </style>
 </head>
-
-<body>
-    <div class="text-block-4">cherry pit</div>
-    <div class="text-block-4">contact</div>
-
-    <h1 class="main iphone-title-name">ray shay<br>producer + director + dp + colorist</h1>
-
-    <div class="contact-container">
-        <a href="sms:+18584426749" class="contact-link">858-442-6749</a>
-        <a href="mailto:rayshay@cherrypitstudios.com" class="contact-link">rayshay@cherrypitstudios.com</a>
-    </div>
-
-    <div class="quick-stack-2">
-        <a href="reels.html">reels</a>
-        <a href="index.html">selects</a>
-        <a href="credits.html">credits</a>
-        <a href="contact.html" class="w--current">contact</a>
-    </div>
-
-</body>
-</html>
